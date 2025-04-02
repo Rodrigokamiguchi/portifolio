@@ -1,0 +1,242 @@
+
+/*ESTILO GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #000;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #ff504c;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #b82725;
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2 span{
+    color: #ff504c;
+}
+/* ESTILO cABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+/*TOPO DO SITE*/
+section .top{
+    padding: 40px 4%;
+    margin-top: 80px;
+}
+section .top .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.top h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+.top .text-site h1 span{
+    color: #ff504c;
+}
+
+.top .text-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.top .img-top-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 50%;
+    width: 350px;
+    margin-left: 280px;
+}
+
+/* Esoecialidades*/
+
+section .especialidades{
+    padding: 40px 4%;
+}
+
+.especialidades .skills {
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill-bubble {
+    background-color: #838383;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.icons{
+    width: 40px;
+}
+
+.skill-bubble::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+
+.MYSQL::before{
+    box-shadow: 0 0 15px 2px #0290c4;
+}
+
+.MYSQL:hover{
+    box-shadow: 0 0 15px 3px #0290c4;
+}
+
+.Python::before{
+    box-shadow: 0 0 15px 2px #ffca28;
+}
+
+.Python::hover{
+    box-shadow: 0 0 15px 5px #ffca28;
+}
+
+.UNITY::before{
+    box-shadow: 0 0 15px 2px #9b9b9b;;
+}
+
+.UNITY:hover{
+    box-shadow: 0 0 15px 3px #9b9b9b;
+}
+
+.UNREAL::before{
+    box-shadow: 0 0 15px 2px #fff;
+}
+
+.UNREAL:hover{
+    box-shadow: 0 0 15px 3px #fff;
+}
+
+.BLENDER::before{
+    box-shadow: 0 0 15px 2px #ffa500;
+}
+
+.BLENDER:hover{
+    box-shadow: 0 0 15px 3px #ffa500;
+}
+
+.Java::before{
+    box-shadow: 0 0 15px 2px #73A1FB;
+}
+
+.Java:hover{
+    box-shadow: 0 0 15px 3px #73A1FB;
+}
+.GIMP::before{
+    box-shadow: 0 0 15px 2px #874b0f;
+}
+
+.GIMP:hover{
+    box-shadow: 0 0 15px 3px #874b0f;
+}
+
+
+
+.skill-bubble i {
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.skill-bubble img{
+    width: 32px;
+}
+
+.skill-bubble:hover {
+    transform: scale(1.1);
+}
+
+/*Animate*/
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
