@@ -39,6 +39,7 @@ body{
 }
 
 h2 {
+    margin-top: 80px;
     color: #fff;
     font-size: 38px;
     text-align: center;
@@ -47,6 +48,7 @@ h2 {
 h2 span{
     color: #ff504c;
 }
+
 /* ESTILO cABEÇALHO */
 header{
     padding: 40px 4%;
@@ -79,11 +81,10 @@ header nav ul li{
     padding: 0 40px;
 }
 
-
 /*TOPO DO SITE*/
 section .top{
     padding: 40px 4%;
-    margin-top: 80px;
+    margin-top: 180px;
 }
 section .top .flex{
     align-items: center;
@@ -114,41 +115,31 @@ section .top .flex{
 }
 
 /* Esoecialidades*/
-
 section .especialidades{
     padding: 40px 4%;
 }
 
-.especialidades .skills {
-    color: #fff;
-    padding: 40px;
+.especialidades .especialidades-box{
     display: flex;
     justify-content: center;
+    padding: 40px;
     flex-wrap: wrap;
     gap: 30px;
 }
 
-.skill-bubble {
-    background-color: #838383;
+.especialidades .especialidades-box .icons{
     padding: 15px;
-    margin-top: 20px;
+    background-color: #8d8d8d;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
+    display: inline-block;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
     border: 2px solid transparent;
 }
 
-.icons{
-    width: 40px;
-}
-
-.skill-bubble::before {
-    content: '';
+.especialidades .especialidades-box .icons::before{
     position: absolute;
     top: 0;
     left: 0;
@@ -159,77 +150,72 @@ section .especialidades{
     z-index: -1;
 }
 
-
-.MYSQL::before{
-    box-shadow: 0 0 15px 2px #0290c4;
+section a{
+    color: #5c5c5c;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
 }
 
-.MYSQL:hover{
-    box-shadow: 0 0 15px 3px #0290c4;
+section a:hover{
+    color: #fff;
+    transform: scale(1.05);
 }
+ .java:before{
+    box-shadow: 0 0 30px 5px #ff504c;
+ }
+ .java:hover{
+    box-shadow: 0 0 30px 5px #ff504c;
+    transform: scale(1.05);
+ }
 
-.Python::before{
-    box-shadow: 0 0 15px 2px #ffca28;
-}
+ .python:before{
+    box-shadow: 0 0 60px 5px #0000ff;
+ }
+ .python:hover{
+    box-shadow: 0 0 30px 5px #0000ff;
+    transform: scale(1.05);
+ }
 
-.Python::hover{
-    box-shadow: 0 0 15px 5px #ffca28;
-}
+ .mysql:before{
+    box-shadow: 0 0 60px 5px #ffc222;
+ }
+ .mysql:hover{
+    box-shadow: 0 0 30px 5px #ffc222;
+    transform: scale(1.05);
+ }
 
-.UNITY::before{
-    box-shadow: 0 0 15px 2px #9b9b9b;;
-}
+ .unity:before{
+    box-shadow: 0 0 60px 5px #a0a0a0;
+ }
+ .unity:hover{
+    box-shadow: 0 0 30px 5px #a0a0a0;
+    transform: scale(1.05);
+ }
 
-.UNITY:hover{
-    box-shadow: 0 0 15px 3px #9b9b9b;
-}
+ .unreal:before{
+    box-shadow: 0 0 60px 5px #fff;
+ }
+ .unreal:hover{
+    box-shadow: 0 0 30px 5px #fff;
+    transform: scale(1.05);  
+ }
 
-.UNREAL::before{
-    box-shadow: 0 0 15px 2px #fff;
-}
+ .blender:before{
+    box-shadow: 0 0 60px 5px #FFA500;
+ }
+ .blender:hover{
+    box-shadow: 0 0 30px 5px #FFA500;
+    transform: scale(1.05);  
+ }
 
-.UNREAL:hover{
-    box-shadow: 0 0 15px 3px #fff;
-}
-
-.BLENDER::before{
-    box-shadow: 0 0 15px 2px #ffa500;
-}
-
-.BLENDER:hover{
-    box-shadow: 0 0 15px 3px #ffa500;
-}
-
-.Java::before{
-    box-shadow: 0 0 15px 2px #73A1FB;
-}
-
-.Java:hover{
-    box-shadow: 0 0 15px 3px #73A1FB;
-}
-.GIMP::before{
-    box-shadow: 0 0 15px 2px #874b0f;
-}
-
-.GIMP:hover{
-    box-shadow: 0 0 15px 3px #874b0f;
-}
-
-
-
-.skill-bubble i {
-    font-size: 32px;
-    display: flex;
-    align-items: center;
-}
-
-.skill-bubble img{
-    width: 32px;
-}
-
-.skill-bubble:hover {
-    transform: scale(1.1);
-}
+ .gimp:before{
+    box-shadow: 0 0 60px 5px #964B00;
+ }
+ .gimp:hover{
+    box-shadow: 0 0 30px 5px #964B00;
+    transform: scale(1.05);  
+ }
 
 /*Animate*/
 @keyframes flutuar{
