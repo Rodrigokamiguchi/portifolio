@@ -112,6 +112,9 @@ section .top .flex{
     margin-left: 280px;
 }
 
+.top p{
+    margin-bottom: 1.5px;
+}
 /* Especialidades */
 section .especialidades{
     padding: 40px 4%;
