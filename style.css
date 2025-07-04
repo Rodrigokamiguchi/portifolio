@@ -178,14 +178,6 @@ section a:hover{
     transform: scale(1.05);
 }
 
-.mysql:before{
-    box-shadow: 0 0 60px 5px #ffc222;
-}
-.mysql:hover{
-    box-shadow: 0 0 30px 5px #ffc222;
-    transform: scale(1.05);
-}
-
 .unity:before{
     box-shadow: 0 0 60px 5px #a0a0a0;
 }
