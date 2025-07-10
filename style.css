@@ -366,6 +366,8 @@ section.contato .flex{
     box-shadow: 0 0 30px 5px #00FF00;
     transform: scale(1.05);
 }
+
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .img-port-container {
@@ -417,4 +419,49 @@ section data{
     100%{
         top: 30px;
     }
+}
+
+/* Tela python */
+/* video*/
+
+.video-projeto {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  cursor: pointer;
+  margin: 20px;
+  background-color: #000;
+}
+
+.video-projeto video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  transition: filter 0.3s ease;
+  border-radius: 15px;
+}
+
+.video-projeto:hover video {
+  filter: brightness(1);
+}
+
+.descricao-video {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  color: #fff;
+  font-size: 14px;
+}
+
+.video-projeto:hover .descricao-video {
+  opacity: 1;
 }
